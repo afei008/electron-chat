@@ -1,0 +1,39 @@
+/** @format */
+
+#app {
+  height: 100%;
+}
+
+.app-container {
+  height: 100%;
+}
+
+.app-sidebar {
+  flex: none;
+  width: 54px;
+  padding: 36px 0 20px;
+  background: #2e2e2e;
+
+  .iconfont {
+    font-size: 20px;
+    color: #979797;
+  }
+}
+
+.app-main {
+  flex: 1;
+  height: 100%;
+}
+
+.main-left {
+  box-sizing: border-box;
+  flex: none;
+  width: 250px;
+  height: 100%;
+  background: #e5e4e4;
+  border-right: 1px solid #d6d6d6;
+}
+
+.main-right {
+  flex: 1;
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4210132 */
+  src: url('iconfont.woff2?t=1692069653941') format('woff2'),
+       url('iconfont.woff?t=1692069653941') format('woff'),
+       url('iconfont.ttf?t=1692069653941') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e767";
+}
+
+.icon-search:before {
+  content: "\e65c";
+}
+
+.icon-square:before {
+  content: "\e6d5";
+}
+
+.icon-jietu:before {
+  content: "\e662";
+}
+
+.icon-caidan:before {
+  content: "\e790";
+}
+
+.icon-close:before {
+  content: "\e646";
+}
+
+.icon-emoji:before {
+  content: "\e64a";
+}
+
+.icon-more:before {
+  content: "\e684";
+}
+
+.icon-message:before {
+  content: "\e6bc";
+}
+
+.icon-link:before {
+  content: "\e6bf";
+}
+
+.icon-mobile:before {
+  content: "\e704";
+}
+
+.icon-file:before {
+  content: "\e739";
+}
+
+.icon-move:before {
+  content: "\e768";
+}
+
+.icon-peoplelist:before {
+  content: "\e7be";
+}
+
+.icon-folder:before {
+  content: "\e648";
+}
+
+.icon-min:before {
+  content: "\e692";
+}
+

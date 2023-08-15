@@ -1,0 +1,49 @@
+/** @format */
+
+import type { RouteRecordRaw } from 'vue-router';
+
+const routes: Array<RouteRecordRaw> = [
+  {
+    path: '/',
+    redirect: '/chat',
+    meta: { hidden: true },
+  },
+  {
+    path: '/chat',
+    redirect: '/chat/page',
+    component: () => import('@/layout/index.vue'),
+    children: [
+      {
+        path: 'page',
+        name: 'ChatPage',
+        component: () => import('@/views/chat/chat-page.vue'),
+        meta: { hidden: true },
+      },
+    ],
+  },
+  {
+    path: '/login-page',
+    name: 'Login',
+    component: () => import('@/views/login-page.vue'),
+    meta: { hidden: true },
+  },
+  {
+    path: '/404',
+    name: '404',
+    component: () => import('@/views/error-page/error-404.vue'),
+    meta: { hidden: true },
+  },
+  //   {
+  //     path: '/redirect',
+  //     component: () => import('@/layout/index.vue'),
+  //     meta: { hidden: true },
+  //     children: [
+  //       {
+  //         path: '/redirect/:path(.*)',
+  //         component: () => import('@/views/redirect/index.vue'),
+  //       },
+  //     ],
+  //   },
+];
+
+export default routes;
