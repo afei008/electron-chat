@@ -2,9 +2,11 @@
 
 <template>
   <div class="tools pr flex ac">
-    <div class="item flex ac jc">
-      <div class="iconfont icon-emoji" />
-    </div>
+    <diy-emoji ref="emojiRef" @click="clickEmoji">
+      <div class="item flex ac jc" @click="clickOpen">
+        <div class="iconfont icon-emoji" />
+      </div>
+    </diy-emoji>
     <div class="item flex ac jc">
       <div class="iconfont icon-file" />
     </div>
@@ -21,10 +23,19 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import DiyEmoji from '@/components/DiyEmoji/DiyEmoji.vue';
 import bodyHeight from '../bodyHeight';
 
 const lineRef = ref();
 const isDrag = ref(false);
+
+const emojiRef = ref();
+const clickOpen = () => {
+  emojiRef.value.open();
+};
+const clickEmoji = (e: string) => {
+  console.log(e);
+};
 
 const onMouseMove = (e: MouseEvent) => {
   if (isDrag.value) {
